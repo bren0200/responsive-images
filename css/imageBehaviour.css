@@ -1,0 +1,48 @@
+/*In your webpage there will be 3 layouts. Use percentages to control the width of the <li> elements and the margins between them.*/
+
+/*1. Less than 600px - one column layout*/
+
+/*2. Between 600px and 1200px - two column layout*/
+
+/*3. Above 1200px - four column layout*/
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+
+picture{
+	width: 90%;
+}
+
+img{
+	width: 90%;
+}
+
+li:hover{
+	transform: scale(1.2);
+}
+
+li{
+	float: left;
+	width: 90%;
+	transition: transform 1s ease-in-out;
+}
+
+ul{
+	list-style: none;
+}
+
+@media screen and (min-width: 600px) {
+	li{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	li{
+		width: 25%;
+	}
+}
